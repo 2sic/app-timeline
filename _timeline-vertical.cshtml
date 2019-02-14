@@ -6,20 +6,25 @@
 <div class="co-container-outer ms-wrapper">
     <div class="co-container-inner app-ti-vertical">
             @foreach(var y in years.ToList()) {
-                <div class="d-flex justify-content-center ms-head pb-4">
-                    <h2>@y.Key</h2>
+                <div class="ms-head mt-4 row pb-md-4 justify-content-md-center">
+                    <div class="col-4 pb-4 pb-md-0 col-md-2 ms-milestone-center">
+                        <h2>@y.Key</h2>
+                    </div>
                 </div>
                     foreach (var c in y.ToList()) {
                         var Content = c.Content;
           
-                        <div class="row align-items-center ms-milestone pb-4 sc-element">
+                        <div class="row align-items-md-center ms-milestone pb-md-4 sc-element">
                             @Edit.Toolbar(Content)
 
-                            <div class="col-5">
+                            <div class="col-8 col-md-5 ms-milestone-content">
                                 <h3>@Content.Title</h3>
                                 @Html.Raw(Content.Text)
+                                <div class="ms-content-date">
+                                    @Content.Date.ToString("dd. MMMM yyyy")
+                                </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-4 col-md-2 pb-4 pb-md-0 ms-milestone-center">
                                 <div class="app-ms-img d-flex justify-content-center">
                                     <div class="app-ti-img-wrapper @(!String.IsNullOrEmpty(Content.Image) || !String.IsNullOrEmpty(Content.Icon) ? " " : "app-ti-circle")">
                                         @if(!String.IsNullOrEmpty(Content.Image)) {
@@ -41,7 +46,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-5">
+                            <div class="col-5 col-md-5 ms-milestone-date">
                                 <div class="ms-date">
                                     @Content.Date.ToString("dd. MMMM yyyy")
                                 </div>

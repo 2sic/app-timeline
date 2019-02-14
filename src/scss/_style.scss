@@ -6,33 +6,81 @@
 // bootstrap 4 conventions.
 //
 @media all {
-  .co-container-outer{
+  .co-container-outer {
     .co-container-inner {
-      h2{
-        position: relative;
-        background: $primary;
-        border-radius: 50%;
-        color: #fff;
-        text-align: center;
-        font-size: 18px;
-        font-weight: bold;
-        width: 70px;
-        height: 70px;
-        line-height: 70px;
-        z-index:10;   
-      }
-   
-      .ms-head {margin-top: 30px;}
+      .ms-head {
+        .ms-date-center {
+          display: flex;
+          justify-content: center;
+        }
 
-      .ms-head, .ms-milestone {
+        h2 {
+          position: relative;
+          border-radius: 50%;
+          width: 70px;
+          height: 70px;
+          z-index: 10;
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 70px;
+          text-align: center;
+          color: #fff;
+          margin: 0 auto;
+          background: $primary;
+        }
+      }
+
+      .ms-head,
+      .ms-milestone {
         position: relative;
         z-index: 2;
+
+        .ms-content-date {
+          display: none;
+        }
+
+        @include media-breakpoint-down(sm) {
+          .ms-milestone-content {
+            order: 3;
+
+            .ms-content-date {
+              display: block;
+            }
+          }
+
+          .ms-milestone-center {
+            order: 1;
+            &:after {
+              content: " ";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              width: 2px;
+              z-index: -1;
+              left: calc(50% - 1px);
+              background-color: $primary;
+              visibility: hidden;          
+              @include media-breakpoint-down(sm) {
+               visibility: visible;          
+              }
+            }
+          }
+
+          .ms-milestone-date {
+            order: 2;
+            display: none;
+          }
+        }
 
         &.ms-right {
           display: flex;
           flex-direction: row-reverse;
+
+          @include media-breakpoint-down(sm) {
+            flex-direction: row;
+          }
         }
-        
+
         .ms-righttext {
           text-align: right;
         }
@@ -46,60 +94,73 @@
           z-index: -1;
           left: calc(50% - 1px);
           background-color: $primary;
+          visibility: visible;          
+          @include media-breakpoint-down(sm) {
+           visibility: hidden;          
+          }
         }
       }
-      
-        .row { 
-          .col-2 {
-            .app-ti-icon-bg {
-              height: 40px;
-              width: 40px;
-              background:$primary;
-              border-radius: 50%;
-              margin: 0 auto;
-              text-align: center;
-              
-             
 
-              &.app-ti-overlay {
-                background:rgba($primary, 0.5);
-                height: 100px;
-                width: 100px;
-                top: 0;
-                position: absolute;
-                
-                .app-ti-icon {
-                  line-height: 100px;
-                }
-              }
+      .row {
+        .app-ti-icon-bg {
+          height: 40px;
+          width: 40px;
+          background: $primary;
+          border-radius: 50%;
+          margin: 0 auto;
+          text-align: center;
 
-              .app-ti-icon {
-                color: white;
-                position: relative;
-                line-height: 40px;
-              }
+          &.app-ti-overlay {
+            background: rgba($primary, 0.5);
+            height: 100px;
+            width: 100px;
+            top: 0;
+            position: absolute;
+
+            @include media-breakpoint-down(sm) {
+              width: 70px;
+              height: 70px;
             }
 
-            .app-ti-empty {
-              height: 20px;
-              width: 20px;
-              background: $primary;
-              border-radius: 50%;
-            }
+            .app-ti-icon {
+              line-height: 100px;
 
-            .app-ti-img {
-              height: 100px;
-              width: 100px;
-              background:$primary;
-              border-radius: 50%;
-              margin: 0 auto;
-
-              &:last-child {
-                margin-bottom: 30px;
+              @include media-breakpoint-down(sm) {
+                line-height: 70px;
               }
             }
           }
+
+          .app-ti-icon {
+            color: white;
+            position: relative;
+            line-height: 40px;
+          }
         }
-    }  
+
+        .app-ti-empty {
+          height: 20px;
+          width: 20px;
+          background: $primary;
+          border-radius: 50%;
+        }
+
+        .app-ti-img-wrapper {
+          .app-ti-img {
+            width: 100px;
+            height: 100px;
+
+            @include media-breakpoint-down(sm) {
+              width: 70px;
+              height: 70px;
+            }
+
+            &:last-child {
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
   }
 }
