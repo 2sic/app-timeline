@@ -1,1 +1,60 @@
-<p>You successfully created your own template. Start editing it by hovering the "Manage" button and opening the "Edit Template" dialog.</p>
+@{
+    var milestones = List.OrderBy(x => x.Content.Date);
+    var years = milestones.GroupBy(m => m.Content.Date.ToString("yyyy"));
+}
+
+<div class="co-container-outer ms-wrapper">
+    <div class="co-container-inner app-ti-vertical">
+            @foreach(var y in years.ToList()) {
+                <div class="d-flex justify-content-center ms-head pb-4">
+                    <h2>@y.Key</h2>
+                </div>
+                    foreach (var c in y.ToList()) {
+                        var Content = c.Content;
+          
+                        <div class="row align-items-center ms-milestone pb-4 sc-element">
+                            @Edit.Toolbar(Content)
+
+                            <div class="col-5">
+                                <h3>@Content.Title</h3>
+                                @Html.Raw(Content.Text)
+                            </div>
+                            <div class="col-2">
+                                <div class="app-ms-img d-flex justify-content-center">
+                                    <div class="app-ti-img-wrapper @(!String.IsNullOrEmpty(Content.Image) || !String.IsNullOrEmpty(Content.Icon) ? " " : "app-ti-circle")">
+                                        @if(!String.IsNullOrEmpty(Content.Image)) {
+                                            <div class="app-ti-img">
+                                                <img class="img-fluid rounded-circle" src="@Content.Image?w=400&amp;h=400&amp;mode=crop&amp;scale=both&amp;quality=80" />
+                                            </div>
+                                        }
+                                        @if(!String.IsNullOrEmpty(Content.icon)) {
+                                            <div class="app-ti-icon-bg @(!String.IsNullOrEmpty(Content.Image) ? "app-ti-overlay" :"")">
+                                                <div class="app-ti-icon">
+                                                    <i class="fas @Content.Icon"></i>
+                                                </div>
+                                            </div>
+                                        }
+                                        @if(String.IsNullOrEmpty(Content.icon) && String.IsNullOrEmpty(Content.Image)) {
+                                            <div class="app-ti-empty">
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="ms-date">
+                                    @Content.Date.ToString("dd. MMMM yyyy")
+                                </div>
+                            </div>
+                        </div>
+                    }
+            }
+
+          
+           
+    </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="@App.Path/dist/bs4.css" media="screen" />
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+<script src="@App.Path/dist/scripts.js"></script>

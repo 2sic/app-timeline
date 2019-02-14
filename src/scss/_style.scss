@@ -2,10 +2,104 @@
 // This SCSS generates the css for the general styles
 //
 // It is used by all CSS generators (Bootstrap3/4, etc.)
-// To keep things simple, it uses the standard variables of 
-// bootstrap 4 conventions. 
+// To keep things simple, it uses the standard variables of
+// bootstrap 4 conventions.
 //
-
 @media all {
-	
+  .co-container-outer{
+    .co-container-inner {
+      h2{
+        position: relative;
+        background: $primary;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        z-index:10;   
+      }
+   
+      .ms-head {margin-top: 30px;}
+
+      .ms-head, .ms-milestone {
+        position: relative;
+        z-index: 2;
+
+        &.ms-right {
+          display: flex;
+          flex-direction: row-reverse;
+        }
+        
+        .ms-righttext {
+          text-align: right;
+        }
+
+        &:after {
+          content: " ";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 2px;
+          z-index: -1;
+          left: calc(50% - 1px);
+          background-color: $primary;
+        }
+      }
+      
+        .row { 
+          .col-2 {
+            .app-ti-icon-bg {
+              height: 40px;
+              width: 40px;
+              background:$primary;
+              border-radius: 50%;
+              margin: 0 auto;
+              text-align: center;
+              
+             
+
+              &.app-ti-overlay {
+                background:rgba($primary, 0.5);
+                height: 100px;
+                width: 100px;
+                top: 0;
+                position: absolute;
+                
+                .app-ti-icon {
+                  line-height: 100px;
+                }
+              }
+
+              .app-ti-icon {
+                color: white;
+                position: relative;
+                line-height: 40px;
+              }
+            }
+
+            .app-ti-empty {
+              height: 20px;
+              width: 20px;
+              background: $primary;
+              border-radius: 50%;
+            }
+
+            .app-ti-img {
+              height: 100px;
+              width: 100px;
+              background:$primary;
+              border-radius: 50%;
+              margin: 0 auto;
+
+              &:last-child {
+                margin-bottom: 30px;
+              }
+            }
+          }
+        }
+    }  
+  }
 }

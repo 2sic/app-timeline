@@ -17,4 +17,15 @@ $(document).ready(function(){
 			padding: 1
 		});
 	}
+
+	/* Timeline */
+	$(".ms-milestone").each(function(index) {
+		if(index % 2)
+			$(this).addClass("ms-right");
+	});
+
+	$(".ms-date").each(function(index) {
+		if(index % 2)
+			$(this).addClass("ms-righttext");
+	});
 });
