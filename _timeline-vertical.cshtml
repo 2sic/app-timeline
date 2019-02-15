@@ -6,7 +6,7 @@
 <div class="co-container-outer ms-wrapper">
     <div class="co-container-inner app-ti-vertical">
             @foreach(var y in years.ToList()) {
-                <div class="ms-head mt-4 row pb-md-4 justify-content-md-center">
+                <div class="ms-head row col-10 pb-md-4 justify-content-md-center">
                     <div class="col-4 pb-4 pb-md-0 col-md-2 ms-milestone-center">
                         <h2>@y.Key</h2>
                     </div>
@@ -14,7 +14,7 @@
                     foreach (var c in y.ToList()) {
                         var Content = c.Content;
           
-                        <div class="row align-items-md-center ms-milestone pb-md-4 sc-element">
+                        <div class="row col-10 align-items-md-center ms-milestone pb-md-4 sc-element">
                             @Edit.Toolbar(Content)
 
                             <div class="col-8 col-md-5 ms-milestone-content">

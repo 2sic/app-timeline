@@ -39,9 +39,15 @@
           display: none;
         }
 
+        .ms-date {
+          font-weight: bold;
+          font-size: small;
+        }
+
         @include media-breakpoint-down(sm) {
           .ms-milestone-content {
             order: 3;
+            padding-bottom: 50px;
 
             .ms-content-date {
               display: block;
@@ -93,7 +99,7 @@
           width: 2px;
           z-index: -1;
           left: calc(50% - 1px);
-          background-color: $primary;
+          background-color: #d4d4d4;
           visibility: visible;          
           @include media-breakpoint-down(sm) {
            visibility: hidden;          
@@ -102,6 +108,7 @@
       }
 
       .row {
+        margin: 0 auto;
         .app-ti-icon-bg {
           height: 40px;
           width: 40px;
@@ -112,8 +119,8 @@
 
           &.app-ti-overlay {
             background: rgba($primary, 0.5);
-            height: 100px;
-            width: 100px;
+            height: 125px;
+            width: 125px;
             top: 0;
             position: absolute;
 
@@ -123,7 +130,7 @@
             }
 
             .app-ti-icon {
-              line-height: 100px;
+              line-height: 125px;
 
               @include media-breakpoint-down(sm) {
                 line-height: 70px;
@@ -147,8 +154,7 @@
 
         .app-ti-img-wrapper {
           .app-ti-img {
-            width: 100px;
-            height: 100px;
+            width: 125px;
 
             @include media-breakpoint-down(sm) {
               width: 70px;
