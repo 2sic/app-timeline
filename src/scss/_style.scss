@@ -8,8 +8,9 @@
 @media all {
   .co-container-outer {
     .co-container-inner {
-      .ms-head {
-        .ms-date-center {
+      .ti-head {
+        margin: 0 auto;
+        .ti-date-center {
           display: flex;
           justify-content: center;
         }
@@ -30,65 +31,23 @@
         }
       }
 
-      .ms-head,
-      .ms-milestone {
+      .ti-head,
+      .ti-milestone {
         position: relative;
+        margin: 0 auto;
         z-index: 2;
 
-        .ms-content-date {
-          display: none;
-        }
-
-        .ms-date {
-          font-weight: bold;
-          font-size: small;
-        }
-
-        @include media-breakpoint-down(sm) {
-          .ms-milestone-content {
-            order: 3;
-            padding-bottom: 50px;
-
-            .ms-content-date {
-              display: block;
-            }
-          }
-
-          .ms-milestone-center {
-            order: 1;
-            &:after {
-              content: " ";
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              width: 2px;
-              z-index: -1;
-              left: calc(50% - 1px);
-              background-color: $primary;
-              visibility: hidden;          
-              @include media-breakpoint-down(sm) {
-               visibility: visible;          
-              }
-            }
-          }
-
-          .ms-milestone-date {
-            order: 2;
-            display: none;
-          }
-        }
-
-        &.ms-right {
+        &.ti-right {
           display: flex;
           flex-direction: row-reverse;
 
           @include media-breakpoint-down(sm) {
             flex-direction: row;
           }
-        }
 
-        .ms-righttext {
-          text-align: right;
+          .ti-milestone-content {
+            text-align: left;
+          }
         }
 
         &:after {
@@ -100,16 +59,75 @@
           z-index: -1;
           left: calc(50% - 1px);
           background-color: #d4d4d4;
-          visibility: visible;          
+          visibility: visible;
+
           @include media-breakpoint-down(sm) {
-           visibility: hidden;          
+            visibility: hidden;          
           }
         }
-      }
 
-      .row {
-        margin: 0 auto;
-        .app-ti-icon-bg {
+        .ti-milestone-content {
+          text-align: right;
+        }
+
+        .ti-content-date {
+          display: none;
+        }
+
+        .ti-date {
+          font-weight: bold;
+          font-size: small;
+
+          @include media-breakpoint-down (md){
+            font-weight: bold;
+            font-size: small;
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          .ti-milestone-content {
+            order: 3;
+            padding-bottom: 50px;
+            text-align: left;
+
+            .ti-content-date {
+              display: block;
+              font-weight: bold;
+              font-size: small;
+            }
+          }
+
+          .ti-milestone-center {
+            order: 1;
+
+            &:after {
+              content: " ";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              width: 2px;
+              z-index: -1;
+              left: calc(50% - 1px);
+              background-color: #d4d4d4;
+              visibility: hidden;
+
+              @include media-breakpoint-down(sm) {
+               visibility: visible;          
+              }
+            }
+          }
+
+          .ti-milestone-date {
+            order: 2;
+            display: none;
+          }
+        }
+
+        .ti-rightdate {
+          text-align: right;
+        }
+
+        .ti-icon-bg {
           height: 40px;
           width: 40px;
           background: $primary;
@@ -117,44 +135,44 @@
           margin: 0 auto;
           text-align: center;
 
-          &.app-ti-overlay {
+          &.ti-overlay {
             background: rgba($primary, 0.5);
             height: 125px;
             width: 125px;
             top: 0;
             position: absolute;
 
+            @include media-breakpoint-down (md){
+              width: 80px;
+              height: 80px; 
+            }
+
             @include media-breakpoint-down(sm) {
               width: 70px;
               height: 70px;
             }
 
-            .app-ti-icon {
+            .ti-icon {
               line-height: 125px;
+
+              @include media-breakpoint-down (md){
+                line-height: 80px;
+              }
 
               @include media-breakpoint-down(sm) {
                 line-height: 70px;
               }
             }
           }
-
-          .app-ti-icon {
-            color: white;
-            position: relative;
-            line-height: 40px;
-          }
         }
 
-        .app-ti-empty {
-          height: 20px;
-          width: 20px;
-          background: $primary;
-          border-radius: 50%;
-        }
-
-        .app-ti-img-wrapper {
-          .app-ti-img {
+        .ti-img-wrapper {
+          .ti-img {
             width: 125px;
+
+            @include media-breakpoint-down (md){
+              width: 80px;
+            }
 
             @include media-breakpoint-down(sm) {
               width: 70px;
@@ -164,6 +182,19 @@
             &:last-child {
               margin-bottom: 30px;
             }
+          }
+
+          .ti-empty {
+            height: 20px;
+            width: 20px;
+            background: $primary;
+            border-radius: 50%;
+          }
+
+          .ti-icon {
+            color: white;
+            position: relative;
+            line-height: 40px;
           }
         }
       }

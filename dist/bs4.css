@@ -4,81 +4,44 @@
  * Re-generate it using the SASS variables of your theme
 */
 @media all {
-  .co-container-outer .co-container-inner .ms-head .ms-date-center {
-    display: flex;
-    justify-content: center; }
-  .co-container-outer .co-container-inner .ms-head h2 {
-    position: relative;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    z-index: 10;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 70px;
-    text-align: center;
-    color: #fff;
-    margin: 0 auto;
-    background: #4A148C; }
-  .co-container-outer .co-container-inner .ms-head,
-  .co-container-outer .co-container-inner .ms-milestone {
-    position: relative;
-    z-index: 2; }
-    .co-container-outer .co-container-inner .ms-head .ms-content-date,
-    .co-container-outer .co-container-inner .ms-milestone .ms-content-date {
-      display: none; }
-    .co-container-outer .co-container-inner .ms-head .ms-date,
-    .co-container-outer .co-container-inner .ms-milestone .ms-date {
+  .co-container-outer .co-container-inner .ti-head {
+    margin: 0 auto; }
+    .co-container-outer .co-container-inner .ti-head .ti-date-center {
+      display: flex;
+      justify-content: center; }
+    .co-container-outer .co-container-inner .ti-head h2 {
+      position: relative;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      z-index: 10;
+      font-size: 18px;
       font-weight: bold;
-      font-size: small; } }
-  @media all and (max-width: 767.98px) {
-    .co-container-outer .co-container-inner .ms-head .ms-milestone-content,
-    .co-container-outer .co-container-inner .ms-milestone .ms-milestone-content {
-      order: 3;
-      padding-bottom: 50px; }
-      .co-container-outer .co-container-inner .ms-head .ms-milestone-content .ms-content-date,
-      .co-container-outer .co-container-inner .ms-milestone .ms-milestone-content .ms-content-date {
-        display: block; }
-    .co-container-outer .co-container-inner .ms-head .ms-milestone-center,
-    .co-container-outer .co-container-inner .ms-milestone .ms-milestone-center {
-      order: 1; }
-      .co-container-outer .co-container-inner .ms-head .ms-milestone-center:after,
-      .co-container-outer .co-container-inner .ms-milestone .ms-milestone-center:after {
-        content: " ";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        z-index: -1;
-        left: calc(50% - 1px);
-        background-color: #4A148C;
-        visibility: hidden; } }
-    @media all and (max-width: 767.98px) and (max-width: 767.98px) {
-      .co-container-outer .co-container-inner .ms-head .ms-milestone-center:after,
-      .co-container-outer .co-container-inner .ms-milestone .ms-milestone-center:after {
-        visibility: visible; } }
-  @media all and (max-width: 767.98px) {
-    .co-container-outer .co-container-inner .ms-head .ms-milestone-date,
-    .co-container-outer .co-container-inner .ms-milestone .ms-milestone-date {
-      order: 2;
-      display: none; } }
-
-@media all {
-    .co-container-outer .co-container-inner .ms-head.ms-right,
-    .co-container-outer .co-container-inner .ms-milestone.ms-right {
+      line-height: 70px;
+      text-align: center;
+      color: #fff;
+      margin: 0 auto;
+      background: #4A148C; }
+  .co-container-outer .co-container-inner .ti-head,
+  .co-container-outer .co-container-inner .ti-milestone {
+    position: relative;
+    margin: 0 auto;
+    z-index: 2; }
+    .co-container-outer .co-container-inner .ti-head.ti-right,
+    .co-container-outer .co-container-inner .ti-milestone.ti-right {
       display: flex;
       flex-direction: row-reverse; } }
     @media all and (max-width: 767.98px) {
-      .co-container-outer .co-container-inner .ms-head.ms-right,
-      .co-container-outer .co-container-inner .ms-milestone.ms-right {
+      .co-container-outer .co-container-inner .ti-head.ti-right,
+      .co-container-outer .co-container-inner .ti-milestone.ti-right {
         flex-direction: row; } }
 
 @media all {
-    .co-container-outer .co-container-inner .ms-head .ms-righttext,
-    .co-container-outer .co-container-inner .ms-milestone .ms-righttext {
-      text-align: right; }
-    .co-container-outer .co-container-inner .ms-head:after,
-    .co-container-outer .co-container-inner .ms-milestone:after {
+      .co-container-outer .co-container-inner .ti-head.ti-right .ti-milestone-content,
+      .co-container-outer .co-container-inner .ti-milestone.ti-right .ti-milestone-content {
+        text-align: left; }
+    .co-container-outer .co-container-inner .ti-head:after,
+    .co-container-outer .co-container-inner .ti-milestone:after {
       content: " ";
       position: absolute;
       top: 0;
@@ -89,57 +52,132 @@
       background-color: #d4d4d4;
       visibility: visible; } }
     @media all and (max-width: 767.98px) {
-      .co-container-outer .co-container-inner .ms-head:after,
-      .co-container-outer .co-container-inner .ms-milestone:after {
+      .co-container-outer .co-container-inner .ti-head:after,
+      .co-container-outer .co-container-inner .ti-milestone:after {
         visibility: hidden; } }
 
 @media all {
-  .co-container-outer .co-container-inner .row {
-    margin: 0 auto; }
-    .co-container-outer .co-container-inner .row .app-ti-icon-bg {
+    .co-container-outer .co-container-inner .ti-head .ti-milestone-content,
+    .co-container-outer .co-container-inner .ti-milestone .ti-milestone-content {
+      text-align: right; }
+    .co-container-outer .co-container-inner .ti-head .ti-content-date,
+    .co-container-outer .co-container-inner .ti-milestone .ti-content-date {
+      display: none; }
+    .co-container-outer .co-container-inner .ti-head .ti-date,
+    .co-container-outer .co-container-inner .ti-milestone .ti-date {
+      font-weight: bold;
+      font-size: small; } }
+    @media all and (max-width: 991.98px) {
+      .co-container-outer .co-container-inner .ti-head .ti-date,
+      .co-container-outer .co-container-inner .ti-milestone .ti-date {
+        font-weight: bold;
+        font-size: small; } }
+  @media all and (max-width: 767.98px) {
+    .co-container-outer .co-container-inner .ti-head .ti-milestone-content,
+    .co-container-outer .co-container-inner .ti-milestone .ti-milestone-content {
+      order: 3;
+      padding-bottom: 50px;
+      text-align: left; }
+      .co-container-outer .co-container-inner .ti-head .ti-milestone-content .ti-content-date,
+      .co-container-outer .co-container-inner .ti-milestone .ti-milestone-content .ti-content-date {
+        display: block;
+        font-weight: bold;
+        font-size: small; }
+    .co-container-outer .co-container-inner .ti-head .ti-milestone-center,
+    .co-container-outer .co-container-inner .ti-milestone .ti-milestone-center {
+      order: 1; }
+      .co-container-outer .co-container-inner .ti-head .ti-milestone-center:after,
+      .co-container-outer .co-container-inner .ti-milestone .ti-milestone-center:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        z-index: -1;
+        left: calc(50% - 1px);
+        background-color: #d4d4d4;
+        visibility: hidden; } }
+    @media all and (max-width: 767.98px) and (max-width: 767.98px) {
+      .co-container-outer .co-container-inner .ti-head .ti-milestone-center:after,
+      .co-container-outer .co-container-inner .ti-milestone .ti-milestone-center:after {
+        visibility: visible; } }
+  @media all and (max-width: 767.98px) {
+    .co-container-outer .co-container-inner .ti-head .ti-milestone-date,
+    .co-container-outer .co-container-inner .ti-milestone .ti-milestone-date {
+      order: 2;
+      display: none; } }
+
+@media all {
+    .co-container-outer .co-container-inner .ti-head .ti-rightdate,
+    .co-container-outer .co-container-inner .ti-milestone .ti-rightdate {
+      text-align: right; }
+    .co-container-outer .co-container-inner .ti-head .ti-icon-bg,
+    .co-container-outer .co-container-inner .ti-milestone .ti-icon-bg {
       height: 40px;
       width: 40px;
       background: #4A148C;
       border-radius: 50%;
       margin: 0 auto;
       text-align: center; }
-      .co-container-outer .co-container-inner .row .app-ti-icon-bg.app-ti-overlay {
+      .co-container-outer .co-container-inner .ti-head .ti-icon-bg.ti-overlay,
+      .co-container-outer .co-container-inner .ti-milestone .ti-icon-bg.ti-overlay {
         background: rgba(74, 20, 140, 0.5);
         height: 125px;
         width: 125px;
         top: 0;
         position: absolute; } }
+      @media all and (max-width: 991.98px) {
+        .co-container-outer .co-container-inner .ti-head .ti-icon-bg.ti-overlay,
+        .co-container-outer .co-container-inner .ti-milestone .ti-icon-bg.ti-overlay {
+          width: 80px;
+          height: 80px; } }
       @media all and (max-width: 767.98px) {
-        .co-container-outer .co-container-inner .row .app-ti-icon-bg.app-ti-overlay {
+        .co-container-outer .co-container-inner .ti-head .ti-icon-bg.ti-overlay,
+        .co-container-outer .co-container-inner .ti-milestone .ti-icon-bg.ti-overlay {
           width: 70px;
           height: 70px; } }
 
 @media all {
-        .co-container-outer .co-container-inner .row .app-ti-icon-bg.app-ti-overlay .app-ti-icon {
+        .co-container-outer .co-container-inner .ti-head .ti-icon-bg.ti-overlay .ti-icon,
+        .co-container-outer .co-container-inner .ti-milestone .ti-icon-bg.ti-overlay .ti-icon {
           line-height: 125px; } }
+        @media all and (max-width: 991.98px) {
+          .co-container-outer .co-container-inner .ti-head .ti-icon-bg.ti-overlay .ti-icon,
+          .co-container-outer .co-container-inner .ti-milestone .ti-icon-bg.ti-overlay .ti-icon {
+            line-height: 80px; } }
         @media all and (max-width: 767.98px) {
-          .co-container-outer .co-container-inner .row .app-ti-icon-bg.app-ti-overlay .app-ti-icon {
+          .co-container-outer .co-container-inner .ti-head .ti-icon-bg.ti-overlay .ti-icon,
+          .co-container-outer .co-container-inner .ti-milestone .ti-icon-bg.ti-overlay .ti-icon {
             line-height: 70px; } }
 
 @media all {
-      .co-container-outer .co-container-inner .row .app-ti-icon-bg .app-ti-icon {
-        color: white;
-        position: relative;
-        line-height: 40px; }
-    .co-container-outer .co-container-inner .row .app-ti-empty {
-      height: 20px;
-      width: 20px;
-      background: #4A148C;
-      border-radius: 50%; }
-    .co-container-outer .co-container-inner .row .app-ti-img-wrapper .app-ti-img {
+    .co-container-outer .co-container-inner .ti-head .ti-img-wrapper .ti-img,
+    .co-container-outer .co-container-inner .ti-milestone .ti-img-wrapper .ti-img {
       width: 125px; } }
+    @media all and (max-width: 991.98px) {
+      .co-container-outer .co-container-inner .ti-head .ti-img-wrapper .ti-img,
+      .co-container-outer .co-container-inner .ti-milestone .ti-img-wrapper .ti-img {
+        width: 80px; } }
     @media all and (max-width: 767.98px) {
-      .co-container-outer .co-container-inner .row .app-ti-img-wrapper .app-ti-img {
+      .co-container-outer .co-container-inner .ti-head .ti-img-wrapper .ti-img,
+      .co-container-outer .co-container-inner .ti-milestone .ti-img-wrapper .ti-img {
         width: 70px;
         height: 70px; } }
 
 @media all {
-      .co-container-outer .co-container-inner .row .app-ti-img-wrapper .app-ti-img:last-child {
-        margin-bottom: 30px; } }
+      .co-container-outer .co-container-inner .ti-head .ti-img-wrapper .ti-img:last-child,
+      .co-container-outer .co-container-inner .ti-milestone .ti-img-wrapper .ti-img:last-child {
+        margin-bottom: 30px; }
+    .co-container-outer .co-container-inner .ti-head .ti-img-wrapper .ti-empty,
+    .co-container-outer .co-container-inner .ti-milestone .ti-img-wrapper .ti-empty {
+      height: 20px;
+      width: 20px;
+      background: #4A148C;
+      border-radius: 50%; }
+    .co-container-outer .co-container-inner .ti-head .ti-img-wrapper .ti-icon,
+    .co-container-outer .co-container-inner .ti-milestone .ti-img-wrapper .ti-icon {
+      color: white;
+      position: relative;
+      line-height: 40px; } }
 
 /*# sourceMappingURL=bs4.css.map */

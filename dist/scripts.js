@@ -19,13 +19,13 @@ $(document).ready(function(){
 	}
 
 	/* Timeline */
-	$(".ms-milestone").each(function(index) {
+	$(".ti-milestone").each(function(index) {
 		if(index % 2)
-			$(this).addClass("ms-right");
+			$(this).addClass("ti-right");
 	});
 
-	$(".ms-date").each(function(index) {
+	$(".ti-date").each(function(index) {
 		if(index % 2)
-			$(this).addClass("ms-righttext");
+			$(this).addClass("ti-rightdate");
 	});
 });

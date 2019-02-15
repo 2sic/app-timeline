@@ -3,51 +3,51 @@
     var years = milestones.GroupBy(m => m.Content.Date.ToString("yyyy"));
 }
 
-<div class="co-container-outer ms-wrapper">
-    <div class="co-container-inner app-ti-vertical">
+<div class="co-container-outer ti-wrapper">
+    <div class="co-container-inner ti-vertical">
             @foreach(var y in years.ToList()) {
-                <div class="ms-head row col-10 pb-md-4 justify-content-md-center">
-                    <div class="col-4 pb-4 pb-md-0 col-md-2 ms-milestone-center">
+                <div class="ti-head row col-10 pb-md-4 justify-content-md-center">
+                    <div class="col-4 pb-4 pb-md-0 col-md-2 ti-milestone-center">
                         <h2>@y.Key</h2>
                     </div>
                 </div>
                     foreach (var c in y.ToList()) {
                         var Content = c.Content;
           
-                        <div class="row col-10 align-items-md-center ms-milestone pb-md-4 sc-element">
+                        <div class="row col-10 align-items-md-center ti-milestone pb-md-4 sc-element">
                             @Edit.Toolbar(Content)
 
-                            <div class="col-8 col-md-5 ms-milestone-content">
+                            <div class="col-8 col-md-5 ti-milestone-content">
                                 <h3>@Content.Title</h3>
                                 @Html.Raw(Content.Text)
-                                <div class="ms-content-date">
+                                <div class="ti-content-date">
                                     @Content.Date.ToString("dd. MMMM yyyy")
                                 </div>
                             </div>
-                            <div class="col-4 col-md-2 pb-4 pb-md-0 ms-milestone-center">
-                                <div class="app-ms-img d-flex justify-content-center">
-                                    <div class="app-ti-img-wrapper @(!String.IsNullOrEmpty(Content.Image) || !String.IsNullOrEmpty(Content.Icon) ? " " : "app-ti-circle")">
+                            <div class="col-4 col-md-2 pb-4 pb-md-0 ti-milestone-center">
+                                <div class="ti-img d-flex justify-content-center">
+                                    <div class="ti-img-wrapper @(!String.IsNullOrEmpty(Content.Image) || !String.IsNullOrEmpty(Content.Icon) ? " " : "ti-circle")">
                                         @if(!String.IsNullOrEmpty(Content.Image)) {
-                                            <div class="app-ti-img">
+                                            <div class="ti-img">
                                                 <img class="img-fluid rounded-circle" src="@Content.Image?w=400&amp;h=400&amp;mode=crop&amp;scale=both&amp;quality=80" />
                                             </div>
                                         }
                                         @if(!String.IsNullOrEmpty(Content.icon)) {
-                                            <div class="app-ti-icon-bg @(!String.IsNullOrEmpty(Content.Image) ? "app-ti-overlay" :"")">
-                                                <div class="app-ti-icon">
+                                            <div class="ti-icon-bg @(!String.IsNullOrEmpty(Content.Image) ? "ti-overlay" :"")">
+                                                <div class="ti-icon">
                                                     <i class="fas @Content.Icon"></i>
                                                 </div>
                                             </div>
                                         }
                                         @if(String.IsNullOrEmpty(Content.icon) && String.IsNullOrEmpty(Content.Image)) {
-                                            <div class="app-ti-empty">
+                                            <div class="ti-empty">
                                             </div>
                                         }
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-5 col-md-5 ms-milestone-date">
-                                <div class="ms-date">
+                            <div class="col-5 col-md-5 ti-milestone-date">
+                                <div class="ti-date">
                                     @Content.Date.ToString("dd. MMMM yyyy")
                                 </div>
                             </div>
