@@ -34,26 +34,8 @@ So customizing it is mostly done using common technologies like HTML, JS and som
 ## Quick Intro To The Timeline App for DNN
 A [DNN App][2sxc] is like a DNN module, just way better :). Since this is an open-code/open-source 2sxc-app, you can customize it to be anything you want! This list just shows what it already does, so you know what you get out-of-the-first-box.
 
-1. Pre-Built Forms for use or learning
-    1. Basic contact form with _Subject, Message, Name, E-Mail_
-    1. A support-request form with a dropdown-example
-    1. An example with JS show/hide logic and saving raw JSON-data
-1. **AJAX**, so no page reloads for validation, sending or messages
-1. **Recaptcha** (optional) validation on client and server
-2. data is saved, together with the _Timestamp_, _SenderIP_, optionaly generated _Title_ or even raw JSON-data
-3. sends [various e-mails][cust-mail], which are **razor-templateable** and has **Reply-To** and **CC** options
-4. **multi-language** labels and messages, already translated into English and German/Deutsch
-6. field validation uses [html5 and jQueryValidation][jqval] and works with multiple forms on the same page
-7. you can easily **review / manage / filter** the submitted items in a table-view
-8. **export all submissions** into an Excel-compatible XML format
-1. **open code C# WebApi** easy to customize if you ever need to
-
 Because it's so simple and uses 2sxc, you can easily
 * [translate it into any other language in minutes][translate]
-* [add more fields, even with special validation in minutes][cust-field]
-* [customize the e-mail templates][cust-mail]
-* send more e-mails, trigger other [custom WebApi actions][cust-webapi]
-* create [more custom forms][add-forms] which store into further content-types
 
 ## Getting Started
 
