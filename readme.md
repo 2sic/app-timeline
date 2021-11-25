@@ -1,10 +1,10 @@
 <image src="app-icon.png" align="right" width="200px">
 
-# Timeline App for .net CMSs
+# Timeline 3 App for .net CMSs
 
 > This is a [2sxc](https://2sxc.org) App for [DNN ☢️](https://www.dnnsoftware.com/) and [Oqtane 💧](https://www.oqtane.org/)
 
-This **Timeline** App is an add-on to DNN. It is _the most customizable Form extension_ in the DNN ecosystem.
+This **Timeline 3** App is an add-on to DNN. It is _the most customizable Form extension_ in the DNN ecosystem.
 
 | Aspect              | Status | Comments or Version |
 | ------------------- | :----: | ------------------- |
