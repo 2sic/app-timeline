@@ -18,7 +18,7 @@ This **Timeline 3** App is an add-on to DNN.
 | App Catalog         | ✅    | See [app catalog]()
 | Screenshots         | ✅    | See [app catalog]()
 | Best Practices      | ✅    | Uses v12.05 conventions
-| Bootstrap 3         | ✅    | optimized
+| Bootstrap 3         | ✔️    | not optimized
 | Bootstrap 4         | ✅    | optimized
 | Bootstrap 5         | ✅    | optimized
 

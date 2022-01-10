@@ -53,7 +53,7 @@
       visibility: visible;
 
       @include media-breakpoint-down(sm) {
-        visibility: hidden;          
+        visibility: hidden;
       }
     }
 
@@ -69,7 +69,7 @@
       font-weight: bold;
       font-size: small;
 
-      @include media-breakpoint-down (md){
+      @include media-breakpoint-down(md) {
         font-weight: bold;
         font-size: small;
       }
@@ -106,7 +106,7 @@
           visibility: hidden;
 
           @include media-breakpoint-down(sm) {
-            visibility: visible;          
+            visibility: visible;
           }
         }
       }
@@ -136,9 +136,9 @@
         top: 0;
         position: absolute;
 
-        @include media-breakpoint-down (md){
+        @include media-breakpoint-down(md) {
           width: 80px;
-          height: 80px; 
+          height: 80px;
         }
 
         @include media-breakpoint-down(sm) {
@@ -149,7 +149,7 @@
         .app-timeline-icon {
           line-height: 125px;
 
-          @include media-breakpoint-down (md){
+          @include media-breakpoint-down(md) {
             line-height: 80px;
           }
 
@@ -164,7 +164,7 @@
       .app-timeline-img {
         width: 125px;
 
-        @include media-breakpoint-down (md){
+        @include media-breakpoint-down(md) {
           width: 80px;
         }
 
@@ -191,5 +191,23 @@
         line-height: 40px;
       }
     }
+  }
+}
+
+.row::after {
+  display: flex !important;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center !important;
+}
+@media (min-width: 768px) {
+  .justify-content-md-center {
+    display: flex;
+    justify-content: center !important;
+  }
+  .pb-md-4, .py-md-4 {
+      padding-bottom: 1.5rem!important;
   }
 }
