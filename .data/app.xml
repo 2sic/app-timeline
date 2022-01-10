@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.10.00" ExportDate="2021-11-25T12:55:54.1500849+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.00.01" ExportDate="2022-01-10T13:24:50.9567912+01:00">
   <Header>
-    <App Guid="f71f9bda-c82a-4b5f-b7b5-3e87f92b4027" />
+    <App Guid="f7b4714c-f706-4f6d-8d41-1bee4601d5cc" />
     <Language Default="en-us" />
     <Dimensions>
       <Dimension DimensionID="115" Name="English (United States)" SystemKey="" ExternalKey="en-US" Active="true" />
@@ -9,13 +9,13 @@
     </Dimensions>
   </Header>
   <AttributeSets>
-    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
-    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
-    <AttributeSet StaticName="ae4e6178-e7a9-4a88-9d3d-026d8cc947a7" Name="Timeline" Description="" Scope="2SexyContent" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="ae4e6178-e7a9-4a88-9d3d-026d8cc947a7" Name="Timeline" Description="" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a6016aa8-4f16-41f2-bde3-950ed40a5b53" Json="True" KeyNumber="2130">
@@ -264,7 +264,7 @@
       <Value Key="DisplayName" Value="Timeline" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="Folder" Value="Timeline" Type="String">
+      <Value Key="Folder" Value="Timeline3" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
       <Value Key="Hidden" Value="False" Type="Boolean">
@@ -282,7 +282,7 @@
       <Value Key="RequiredVersion" Value="12.05.00" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
+      <Value Key="SupportsAjaxReload" Value="True" Type="Boolean">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
       <Value Key="Version" Value="03.00.00" Type="String">
@@ -373,45 +373,17 @@
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
     </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="3937fa17-ef2d-40a7-b089-64164eb10bab" AttributeSetName="2sxcPolymorphismConfiguration" EntityGUID="9936f02d-8ccd-4d2c-b103-3f95cd545abb" Json="True">
+      <Value Key="Mode" Value="Koi?cssFramework" Type="String">
+        <Dimension DimensionID="115" ReadOnly="false" />
+      </Value>
+    </Entity>
   </Entities>
   <PortalFiles>
     <File Id="1468" RelativePath="adam\Timeline\BXldxUuZi0aS4sDpvNSYIQ\Image\Platzhalterbilder.jpg" />
-    <File Id="1269" RelativePath="adam\Timeline\6looj7ZH6ku_Tti1VufuTg\Image\Demo-1.jpg" />
-    <File Id="1274" RelativePath="adam\Timeline\6-saD7fnf0eU2k1XAbEs6A\Image\sam-wheat-1299513-unsplash.jpg" />
-    <File Id="1272" RelativePath="adam\Timeline\8VPETKFyFkqOI1wnpdAhag\Image\sam-wheat-1299513-unsplash.jpg" />
-    <File Id="1270" RelativePath="adam\Timeline\bNOGQeFYPkCZ5L7dqE2_rg\Image\sam-wheat-1299513-unsplash.jpg" />
-    <File Id="1276" RelativePath="adam\Timeline\bNOGQeFYPkCZ5L7dqE2_rg\Image\sam-wheat-1299513-unsplash-1.jpg" />
-    <File Id="1277" RelativePath="adam\Timeline\bNOGQeFYPkCZ5L7dqE2_rg\Image\sam-wheat-1299513-unsplash-2.jpg" />
-    <File Id="1278" RelativePath="adam\Timeline\bNOGQeFYPkCZ5L7dqE2_rg\Image\sam-wheat-1299513-unsplash-3.jpg" />
-    <File Id="1279" RelativePath="adam\Timeline\bNOGQeFYPkCZ5L7dqE2_rg\Image\sam-wheat-1299513-unsplash-4.jpg" />
-    <File Id="1280" RelativePath="adam\Timeline\bNOGQeFYPkCZ5L7dqE2_rg\Image\sam-wheat-1299513-unsplash-5.jpg" />
-    <File Id="1467" RelativePath="adam\Timeline\BXldxUuZi0aS4sDpvNSYIQ\Image\new-zealand-flag-square-icon-32.png" />
-    <File Id="1275" RelativePath="adam\Timeline\G0_mYJfzt0mC-an-g2Ecfg\Image\sam-wheat-1299513-unsplash.jpg" />
-    <File Id="1466" RelativePath="adam\Timeline\jlwDku-aL0CEXi8lsiuvSg\Image\milos-tonchevski-304529-unsplash.jpg" />
-    <File Id="1271" RelativePath="adam\Timeline\pjKIdlbsDUqbPB4Cxxds7A\Image\sam-wheat-1299513-unsplash.jpg" />
-    <File Id="1273" RelativePath="adam\Timeline\wEzgYQPRQ0aKgKacYS6Svw\Image\sam-wheat-1299513-unsplash.jpg" />
   </PortalFiles>
   <PortalFolders>
     <Folder Id="2998" RelativePath="adam/Timeline/BXldxUuZi0aS4sDpvNSYIQ/Image/" />
-    <Folder Id="2627" RelativePath="adam/Timeline/6looj7ZH6ku_Tti1VufuTg/Image/" />
-    <Folder Id="2637" RelativePath="adam/Timeline/6-saD7fnf0eU2k1XAbEs6A/Image/" />
-    <Folder Id="2633" RelativePath="adam/Timeline/8VPETKFyFkqOI1wnpdAhag/Image/" />
-    <Folder Id="2629" RelativePath="adam/Timeline/bNOGQeFYPkCZ5L7dqE2_rg/Image/" />
-    <Folder Id="2639" RelativePath="adam/Timeline/G0_mYJfzt0mC-an-g2Ecfg/Image/" />
-    <Folder Id="2996" RelativePath="adam/Timeline/jlwDku-aL0CEXi8lsiuvSg/Image/" />
-    <Folder Id="2631" RelativePath="adam/Timeline/pjKIdlbsDUqbPB4Cxxds7A/Image/" />
-    <Folder Id="2635" RelativePath="adam/Timeline/wEzgYQPRQ0aKgKacYS6Svw/Image/" />
-    <Folder Id="2625" RelativePath="adam/Timeline/" />
-    <Folder Id="2626" RelativePath="adam/Timeline/6looj7ZH6ku_Tti1VufuTg/" />
-    <Folder Id="2636" RelativePath="adam/Timeline/6-saD7fnf0eU2k1XAbEs6A/" />
-    <Folder Id="2632" RelativePath="adam/Timeline/8VPETKFyFkqOI1wnpdAhag/" />
-    <Folder Id="2628" RelativePath="adam/Timeline/bNOGQeFYPkCZ5L7dqE2_rg/" />
-    <Folder Id="2997" RelativePath="adam/Timeline/BXldxUuZi0aS4sDpvNSYIQ/" />
-    <Folder Id="2638" RelativePath="adam/Timeline/G0_mYJfzt0mC-an-g2Ecfg/" />
-    <Folder Id="2995" RelativePath="adam/Timeline/jlwDku-aL0CEXi8lsiuvSg/" />
-    <Folder Id="12926" RelativePath="adam/Timeline/KIaZhn7_uEGBTCw2S3JZzg/" />
-    <Folder Id="12927" RelativePath="adam/Timeline/KIaZhn7_uEGBTCw2S3JZzg/Image/" />
-    <Folder Id="2630" RelativePath="adam/Timeline/pjKIdlbsDUqbPB4Cxxds7A/" />
-    <Folder Id="2634" RelativePath="adam/Timeline/wEzgYQPRQ0aKgKacYS6Svw/" />
+    <Folder Id="13602" RelativePath="adam/Timeline3/" />
   </PortalFolders>
 </SexyContent>
