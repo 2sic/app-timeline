@@ -29,24 +29,7 @@
         </div>
         <div class="col-xs-4 col-md-2 pb-4 pb-md-0 app-timeline-milestone-center">
           <div class="app-timeline-img d-flex justify-content-center">
-            <div class="app-timeline-img-wrapper @(Text.Has(milestone.Image) || Text.Has(milestone.Icon) ? " " : "app-timeline-circle")">
-              @if(Text.Has(milestone.Image)) {
-                <div class="app-timeline-img">
-                  <img class="img-responsive img-circle" loading="lazy" src='@Link.Image(milestone.Image, width: 400, height: 400, resizeMode: "crop")' />
-                </div>
-              }
-              @if(Text.Has(milestone.icon)) {
-                <div class="app-timeline-icon-bg @(Text.Has(milestone.Image) ? "app-timeline-overlay" :"")">
-                  <div class="app-timeline-icon">
-                    <i class="fas @milestone.Icon"></i>
-                  </div>
-                </div>
-              }
-              @if(!Text.Has(milestone.icon) && !Text.Has(milestone.Image)) {
-                <div class="app-timeline-empty">
-                </div>
-              }
-            </div>
+            @Html.Partial("../shared/_IconAndImage.cshtml", new { Milestone = milestone })
           </div>
         </div>
         <div class="col-xs-5 col-md-5 app-timeline-milestone-date">
@@ -59,4 +42,4 @@
   }
 </div>
 
-@Html.Partial("_Timeline.PartAssets.cshtml")
+@Html.Partial("../shared/_Assets.cshtml")

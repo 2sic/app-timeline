@@ -1,0 +1,17 @@
+.row::after {
+  display: flex !important;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center !important;
+}
+@media (min-width: 768px) {
+  .justify-content-md-center {
+    display: flex;
+    justify-content: center !important;
+  }
+  .pb-md-4, .py-md-4 {
+    padding-bottom: 1.5rem!important;
+  }
+}
