@@ -13,5 +13,7 @@
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
 
+@import "_variables";
+
 // General CSS stuff for everything
 @import "../../shared/styles/styles";

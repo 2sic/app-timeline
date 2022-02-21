@@ -3,7 +3,6 @@
   "version": "3.0.0",
   "description": "The standard App for 2sic to use for timelines.",
   "scripts": {
-    "build-bs3": "webpack --env style=bs3",
     "build-bs4": "webpack --env style=bs4",
     "build-bs5": "webpack --env style=bs5"
   },
