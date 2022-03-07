@@ -46,11 +46,7 @@ The Source Code is all here - so you can easily customize to your hearts desire!
 
 ## History
 
-* 2021-11
+* 2022-03
     * Updated to v12 best-practices
     * Removed all jQuery dependencies
     * Hybrid - now works in Dnn and Oqtane
-
-
-[//]: # "Note: use full http-link, so we can copy/paste this from wiki to readme.md"
-[2sxc]: https://2sxc.org/en/
