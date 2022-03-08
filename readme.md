@@ -15,8 +15,8 @@ This **Timeline 3** App is an add-on to DNN.
 | Live Demo           | ➖    |
 | Install Checklist   | ✅    | See [Installation] on [azing.org](https://azing.org/2sxc)
 | Source & License    | ✅    | included, ISC/MIT
-| App Catalog         | ✅    | See [app catalog]()
-| Screenshots         | ✅    | See [app catalog]()
+| App Catalog         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/timeline-app-v3-hybrid-for-dnn-and-oqtane)
+| Screenshots         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/timeline-app-v3-hybrid-for-dnn-and-oqtane)
 | Best Practices      | ✅    | Uses v12.05 conventions
 | Bootstrap 3         | ✔️    | not optimized
 | Bootstrap 4         | ✅    | optimized
@@ -31,8 +31,6 @@ Because it's so simple and uses 2sxc, you can easily
 ## Getting Started
 
 This app is only useful is you use DNN. So assuming you have a DNN installation, all you need to do is install 2sxc and this app. 
-
-* Here's how to [install 2sxc and an App of your Choice]()
 
 * Now you can use this app as-is, or customize it to be whatever you need it to be. 
 
