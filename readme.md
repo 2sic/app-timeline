@@ -11,7 +11,7 @@ This **Timeline 3** App is an add-on to DNN.
 | 2sxc                | ✅    | requires 2sxc v12.05
 | Dnn                 | ✅    | For v7, v8 and v9
 | Oqtane 2            | ✅    | Requires v2.02
-| No jQuery           | ?    | 
+| No jQuery           | ?     | 
 | Live Demo           | ➖    |
 | Install Checklist   | ✅    | See [Installation] on [azing.org](https://azing.org/2sxc)
 | Source & License    | ✅    | included, ISC/MIT
