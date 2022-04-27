@@ -48,7 +48,7 @@ The Source Code is all here - so you can easily customize to your hearts desire!
     * Updated to v12 best-practices
     * Removed all jQuery dependencies
     * Hybrid - now works in Dnn and Oqtane
-* 2022-04 
+* 2022-04 03.01.00
     * Changed all access to Services to ToSic.Sxc.Services
     * Changed all images to use the IImage Picture tag
     * Enabled image configuration
