@@ -33,4 +33,4 @@
   page.Activate("FontAwesome5"); // see https://r.2sxc.org/turnon
 }
 
-<link rel="stylesheet" href="@App.Path/@viewEdition/dist/@(viewEdition).min.css" data-enableoptimizations="true">
+<link rel="stylesheet" href="@App.Path/@viewEdition/dist/@(viewEdition).min.css" @(page.AssetAttributes())>

@@ -52,3 +52,4 @@ The Source Code is all here - so you can easily customize to your hearts desire!
     * Changed all access to Services to ToSic.Sxc.Services
     * Changed all images to use the IImage Picture tag
     * Enabled image configuration
+    * Replaced data-enableoptimization with pageSvc.AssetAttributes()
