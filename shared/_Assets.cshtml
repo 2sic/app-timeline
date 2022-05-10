@@ -4,7 +4,7 @@
 @{
   // 1. Get Services for Css and Page
   var pageCss = GetService<Connect.Koi.ICss>(); // Service to get CSS information about the current Theme
-  var page = GetService<IPageService>(); // Service to set titles etc. on the page
+  var pageSvc = GetService<IPageService>(); // Service to set titles etc. on the pageSvc
   var viewEdition = CmsContext.View.Edition;
 
   // 2. Include the framework if it isn't known
@@ -18,7 +18,7 @@
       case "bs5": cssFramework = "Bootstrap5"; break;
     };
 
-    page.Activate(cssFramework);
+    pageSvc.Activate(cssFramework);
   }
 
   // 3. Show warning for admin if koi.json is missing
@@ -30,7 +30,7 @@
     </div>
   }
 
-  page.Activate("FontAwesome5"); // see https://r.2sxc.org/turnon
+  pageSvc.Activate("FontAwesome5"); // see https://r.2sxc.org/turnon
 }
 
-<link rel="stylesheet" href="@App.Path/@viewEdition/dist/@(viewEdition).min.css" @(page.AssetAttributes())>
+<link rel="stylesheet" href="@App.Path/@viewEdition/dist/@(viewEdition).min.css" @pageSvc.AssetAttributes()>
