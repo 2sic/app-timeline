@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.10.02" ExportDate="2022-05-10T12:33:41.8126556+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.07.00" ExportDate="2022-06-30T15:50:22.614342+02:00">
   <Header>
     <App Guid="f7b4714c-f706-4f6d-8d41-1bee4601d5cc" />
     <Language Default="en-us" />
@@ -282,13 +282,13 @@
       <Value Key="RequiredOqtaneVersion" Value="03.01.00" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredVersion" Value="13.10.00" Type="String">
+      <Value Key="RequiredVersion" Value="14.07.00" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
       <Value Key="SupportsAjaxReload" Value="True" Type="Boolean">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="03.01.00" Type="String">
+      <Value Key="Version" Value="03.02.00" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
     </Entity>
@@ -382,77 +382,9 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="b812ed74-7e12-456e-a6be-50220751efb7" Json="True">
-      <Value Key="Content" Value="e24f5dad-a8e5-41e1-8e66-f8b1fb3d8ea0,1d2d3bdb-f8af-4a13-8615-326919828c56,bafcaa4b-4259-4048-8743-703fb75e33bc,70e7182c-ce81-4204-a5fc-93b97205038e" Type="Entity" />
+      <Value Key="Content" Value="null,null,null,null" Type="Entity" />
       <Value Key="Presentation" Value="null,null,null,null" Type="Entity" />
       <Value Key="Template" Value="03ce3e88-8a45-4d94-9f00-194ad50d3c88" Type="Entity" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="ae4e6178-e7a9-4a88-9d3d-026d8cc947a7" AttributeSetName="Timeline" EntityGUID="e24f5dad-a8e5-41e1-8e66-f8b1fb3d8ea0">
-      <Value Key="Date" Value="2022-01-27T00:00:00" Type="DateTime">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Icon" Value="fa-address-card" Type="String">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Image" Value="" Type="Hyperlink">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Text" Value="&lt;p&gt;Test 09.05&lt;/p&gt;" Type="String">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Title" Value="Test 09.05" Type="String">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="ae4e6178-e7a9-4a88-9d3d-026d8cc947a7" AttributeSetName="Timeline" EntityGUID="1d2d3bdb-f8af-4a13-8615-326919828c56">
-      <Value Key="Date" Value="2022-01-27T00:00:00" Type="DateTime">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Icon" Value="" Type="String">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Image" Value="" Type="Hyperlink">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Text" Value="&lt;p&gt;Test 09.05&lt;/p&gt;" Type="String">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Title" Value="Test 09.05" Type="String">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="ae4e6178-e7a9-4a88-9d3d-026d8cc947a7" AttributeSetName="Timeline" EntityGUID="70e7182c-ce81-4204-a5fc-93b97205038e">
-      <Value Key="Date" Value="2022-01-27T00:00:00" Type="DateTime">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Icon" Value="fa-adjust" Type="String">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Image" Value="file:6113" Type="Hyperlink">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Text" Value="&lt;p&gt;Test 09.05&lt;/p&gt;" Type="String">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Title" Value="Test 09.05" Type="String">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="ae4e6178-e7a9-4a88-9d3d-026d8cc947a7" AttributeSetName="Timeline" EntityGUID="bafcaa4b-4259-4048-8743-703fb75e33bc">
-      <Value Key="Date" Value="2022-01-27T00:00:00" Type="DateTime">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Icon" Value="fa-anchor" Type="String">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Image" Value="file:6114" Type="Hyperlink">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Text" Value="&lt;p&gt;asdasdasdasd&lt;/p&gt;" Type="String">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
-      <Value Key="Title" Value="asd" Type="String">
-        <Dimension DimensionID="115" ReadOnly="false" />
-      </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1a86b080-9e0d-4207-97d2-04edf80b4f2f" AttributeSetName="⚙️Image" EntityGUID="8f309573-fe8b-453b-98a5-8d0c198a8da7" Json="True">
       <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;variants&quot;: &quot;2*, 1.5*, 1*, 0.75*, 0.5*, 0.25*&quot;,&#xD;&#xA;    &quot;setHeight&quot;: true, &#xD;&#xA;    &quot;setWidth&quot;: true,&#xD;&#xA;    &quot;attributes&quot;:{&#xD;&#xA;      &quot;sizes&quot;: &quot;(max-width:1400px) 125px, (max-width: 991px)80px, (max-width: 767px)70px&quot;&#xD;&#xA;    }&#xD;&#xA;  }&#xD;&#xA;}" Type="String">

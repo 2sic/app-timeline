@@ -1,15 +1,13 @@
-@inherits Custom.Hybrid.Razor12
+@inherits Custom.Hybrid.Razor14
 @using ToSic.Razor.Blade;
-@using ToSic.Sxc.Services;
 @{
-  var imgSvc = GetService<IImageService>();
   var milestone = DynamicModel.Milestone; 
 }
 
 <div class="app-timeline-img-wrapper @(Text.Has(milestone.Image) || Text.Has(milestone.Icon) ? " " : "app-timeline-circle")">
   @if(Text.Has(milestone.Image)) {
     <div class="app-timeline-img">
-      @imgSvc.Picture(milestone.Field("Image"), imgClass:"img-fluid rounded-circle", settings: Settings.Images.Timeline)
+      @Kit.Image.Picture(milestone.Field("Image"), imgClass:"img-fluid rounded-circle", settings: Settings.Images.Timeline)
     </div>
   } else if (Text.Has(milestone.icon)) {
     <div class="app-timeline-icon-bg @(Text.Has(milestone.Image) ? "app-timeline-overlay" :"")">

@@ -53,3 +53,7 @@ The Source Code is all here - so you can easily customize to your hearts desire!
     * Changed all images to use the IImage Picture tag
     * Enabled image configuration
     * Replaced data-enableoptimization with pageSvc.AssetAttributes()
+* 2022-06 03.02.00
+    * Changed all base classes to their 2sxc 14 equivalents
+    * Replaced all GetService<> with the new ServiceKit14
+    * Updated webpack

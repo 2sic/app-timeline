@@ -1,14 +1,10 @@
-@inherits Custom.Hybrid.Razor12
+@inherits Custom.Hybrid.Razor14
 @using ToSic.Razor.Blade;
-@using ToSic.Sxc.Services;
 @{
-  // 1. Get Services for Css and Page
-  var pageCss = GetService<Connect.Koi.ICss>(); // Service to get CSS information about the current Theme
-  var pageSvc = GetService<IPageService>(); // Service to set titles etc. on the pageSvc
   var viewEdition = CmsContext.View.Edition;
 
   // 2. Include the framework if it isn't known
-  if (pageCss.IsUnknown)
+  if (Kit.Css.IsUnknown)
   {
     var cssFramework = "Bootstrap4";
 
@@ -18,11 +14,11 @@
       case "bs5": cssFramework = "Bootstrap5"; break;
     };
 
-    pageSvc.Activate(cssFramework);
+    Kit.Page.Activate(cssFramework);
   }
 
   // 3. Show warning for admin if koi.json is missing
-  if (pageCss.IsUnknown && CmsContext.User.IsSiteAdmin)
+  if (Kit.Css.IsUnknown && CmsContext.User.IsSiteAdmin)
   {
     <div class='dnnFormMessage dnnFormWarning'>
       @Html.Raw(Connect.Koi.Messages.CssInformationMissing) <br>
@@ -30,7 +26,7 @@
     </div>
   }
 
-  pageSvc.Activate("FontAwesome5"); // see https://r.2sxc.org/turnon
+  Kit.Page.Activate("FontAwesome5"); // see https://r.2sxc.org/turnon
 }
 
-<link rel="stylesheet" href="@App.Path/@viewEdition/dist/@(viewEdition).min.css" @pageSvc.AssetAttributes()>
+<link rel="stylesheet" href="@App.Path/@viewEdition/dist/@(viewEdition).min.css" @Kit.Page.AssetAttributes()>
