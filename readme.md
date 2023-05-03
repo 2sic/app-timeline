@@ -61,3 +61,4 @@ The Source Code is all here - so you can easily customize to your hearts desire!
   * Removed _ from Filenames
   * Code in one file the bs5, less duplicated code
   * Removed shared Folder
+  * Replace Edit.Toolbar with `@Kit.Toolbar.Default`

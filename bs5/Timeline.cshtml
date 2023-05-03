@@ -18,7 +18,7 @@
     foreach (var milestone in milestonesOfYear.ToList()) {
       milestoneIndex++;
       <div class='@((milestoneIndex % 2) == 0 ? "app-timeline-right" : "") row col-12 align-items-md-center app-timeline-milestone pb-md-4 sc-element'>
-        @Edit.Toolbar(milestone)
+         @Kit.Toolbar.Default(milestone)
 
         <div class="col-8 col-md-5 app-timeline-milestone-content">
           <h3>@milestone.Title</h3>
