@@ -14,8 +14,9 @@ module.exports = (env) => {
     devtool: 'source-map',
     watch: true,
     stats: {
-      all: false,
-      assets: true
+      warnings: false,
+      cachedModules: false,
+      groupModulesByCacheStatus: false
     },
     cache: {
       type: 'filesystem',
@@ -28,7 +29,7 @@ module.exports = (env) => {
     plugins: [
       new FixStyleOnlyEntriesPlugin(),
       new MiniCssExtractPlugin({
-        filename: `${env.style}.min.css`,
+        filename: `styles.min.css`,
       }),
     ],
     module: {
