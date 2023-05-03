@@ -8,10 +8,10 @@ This **Timeline 3** App is an add-on to DNN.
 
 | Aspect              | Status | Comments or Version |
 | ------------------- | :----: | ------------------- |
-| 2sxc                | ✅    | requires 2sxc v13.10
+| 2sxc                | ✅    | requires 2sxc v16.0
 | Dnn                 | ✅    | For v7, v8 and v9
 | Oqtane 2            | ✅    | Requires v2.02
-| No jQuery           | ?     | 
+| No jQuery           | ?     |
 | Live Demo           | ➖    |
 | Install Checklist   | ✅    | See [Installation] on [azing.org](https://azing.org/2sxc)
 | Source & License    | ✅    | included, ISC/MIT
@@ -45,15 +45,19 @@ The Source Code is all here - so you can easily customize to your hearts desire!
 ## History
 
 * 2022-03
-    * Updated to v12 best-practices
-    * Removed all jQuery dependencies
-    * Hybrid - now works in Dnn and Oqtane
-* 2022-04 03.01.00
-    * Changed all access to Services to ToSic.Sxc.Services
-    * Changed all images to use the IImage Picture tag
-    * Enabled image configuration
-    * Replaced data-enableoptimization with pageSvc.AssetAttributes()
-* 2022-06 03.02.00
-    * Changed all base classes to their 2sxc 14 equivalents
-    * Replaced all GetService<> with the new ServiceKit14
-    * Updated webpack
+  * Updated to v12 best-practices
+  * Removed all jQuery dependencies
+  * Hybrid - now works in Dnn and Oqtane
+* v03.01.00 2022-04
+  * Changed all access to Services to ToSic.Sxc.Services
+  * Changed all images to use the IImage Picture tag
+  * Enabled image configuration
+  * Replaced data-enableoptimization with pageSvc.AssetAttributes()
+* v03.02.00 2022-06
+  * Changed all base classes to their 2sxc 14 equivalents
+  * Replaced all GetService<> with the new ServiceKit14
+  * Updated webpack
+* v03.03.00 2023-05
+  * Removed _ from Filenames
+  * Code in one file the bs5, less duplicated code
+  * Removed shared Folder

@@ -5,7 +5,7 @@
 }
 
 <div class="app-timeline-img-wrapper @(Text.Has(milestone.Image) || Text.Has(milestone.Icon) ? " " : "app-timeline-circle")">
-  @if(Text.Has(milestone.Image)) {
+  @if (Text.Has(milestone.Image)) {
     <div class="app-timeline-img">
       @Kit.Image.Picture(milestone.Field("Image"), imgClass:"img-fluid rounded-circle", settings: Settings.Images.Timeline)
     </div>
