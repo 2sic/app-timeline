@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.09.00" ExportDate="2022-09-21T08:45:38.6009635+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.00.00" ExportDate="2023-05-03T15:30:17.9231084+02:00">
   <Header>
     <App Guid="f7b4714c-f706-4f6d-8d41-1bee4601d5cc" />
     <Language Default="en-us" />
@@ -9,13 +9,13 @@
     </Dimensions>
   </Header>
   <AttributeSets>
-    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="System.App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
-    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="System.App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
-    <AttributeSet StaticName="ae4e6178-e7a9-4a88-9d3d-026d8cc947a7" Name="Timeline" Description="" Scope="Default" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="ae4e6178-e7a9-4a88-9d3d-026d8cc947a7" Name="Timeline" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a6016aa8-4f16-41f2-bde3-950ed40a5b53" Json="True" KeyNumber="2130">
@@ -282,13 +282,13 @@
       <Value Key="RequiredOqtaneVersion" Value="03.01.00" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredVersion" Value="14.09.00" Type="String">
+      <Value Key="RequiredVersion" Value="16.00.00" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
       <Value Key="SupportsAjaxReload" Value="True" Type="Boolean">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="03.02.01" Type="String">
+      <Value Key="Version" Value="03.03.00" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
     </Entity>
@@ -321,7 +321,7 @@
       <Value Key="Name" Value="Timeline vertical" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="Path" Value="bs4/_Timeline.cshtml" Type="String">
+      <Value Key="Path" Value="bs5/Timeline.cshtml" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
       <Value Key="PresentationTypeStaticName" Value="" Type="String">
@@ -390,7 +390,7 @@
       <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;variants&quot;: &quot;2*, 1.5*, 1*, 0.75*, 0.5*, 0.25*&quot;,&#xD;&#xA;    &quot;setHeight&quot;: true, &#xD;&#xA;    &quot;setWidth&quot;: true,&#xD;&#xA;    &quot;attributes&quot;:{&#xD;&#xA;      &quot;sizes&quot;: &quot;(max-width:1400px) 125px, (max-width: 991px)80px, (max-width: 767px)70px&quot;&#xD;&#xA;    }&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="AspectRatio" Value="1" Type="Number">
+      <Value Key="AspectRatio" Value="1.0" Type="Number">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
       <Value Key="Format" Value="" Type="String">
@@ -408,7 +408,7 @@
       <Value Key="SettingsIdentifier" Value="Images.Timeline" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="Width" Value="400" Type="Number">
+      <Value Key="Width" Value="400.0" Type="Number">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
     </Entity>
