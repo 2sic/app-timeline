@@ -1,13 +1,13 @@
-@inherits Custom.Hybrid.Razor14
+@inherits Custom.Hybrid.RazorTyped
 @using ToSic.Razor.Blade;
 @{
-  var viewEdition = CmsContext.View.Edition;
+  var viewEdition = MyView.Edition;
 
   // 2. Include the framework if it isn't known
  @Kit.Page.Activate(condition: Kit.Css.IsUnknown, features: "Bootstrap5")
 
   // 3. Show warning for admin if koi.json is missing
-  if (Kit.Css.IsUnknown && CmsContext.User.IsSiteAdmin)
+  if (Kit.Css.IsUnknown && MyUser.IsSiteAdmin)
   {
     <div class='dnnFormMessage dnnFormWarning'>
       @Html.Raw(Connect.Koi.Messages.CssInformationMissing) <br>
@@ -18,4 +18,4 @@
   Kit.Page.Activate("FontAwesome5"); 
 }
 
-<link rel="stylesheet" href="@CmsContext.View.Path/dist/styles.min.css" @Kit.Page.AssetAttributes()/>
+<link rel="stylesheet" href="@MyView.Path/dist/styles.min.css" @Kit.Page.AssetAttributes()/>
