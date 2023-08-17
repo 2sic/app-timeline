@@ -8,7 +8,7 @@
 <div class="app-timeline-img-wrapper @(Text.Has(milestone.String("Image")) || Text.Has(milestone.String("Icon")) ? " " : "app-timeline-circle")">
   @if (Text.Has(milestone.String("Image"))) {
     <div class="app-timeline-img">
-      @Kit.Image.Picture(milestone.Field("Image"), imgClass:"img-fluid rounded-circle", settings: "Timeline")
+      @milestone.Picture("Image", imgClass:"img-fluid rounded-circle", settings: "Timeline")
     </div>
   } else if (Text.Has(milestone.String("icon"))) {
     <div class="app-timeline-icon-bg @(Text.Has(milestone.String("Image")) ? "app-timeline-overlay" :"")">
