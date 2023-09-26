@@ -7,7 +7,7 @@
   var milestonesByYear = milestones.GroupBy(milestone => milestone.DateTime("Date").ToString("yyyy"));
 }
 
-<div class="app-timeline app-timeline-@MyContext.Module.Id">
+<div class="app-timeline app-timeline-@UniqueKey">
   @foreach (var milestonesOfYear in milestonesByYear.ToList()) {
     var milestoneIndex = 0;
     <div class="app-timeline-head row col-12 pb-md-4 justify-content-md-center">
