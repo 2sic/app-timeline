@@ -1,22 +1,25 @@
-@inherits Custom.Hybrid.RazorTyped
-@using ToSic.Razor.Blade;
+@inherits AppCode.Razor.AppRazor<Timeline>
+@using ToSic.Razor.Blade
+@using AppCode.Data
 
 @{
-  var milestone = MyModel.Item("milestone");
+  var milestone = Model;
+  var hasImage = milestone.IsNotEmpty("Image");
+  var hasIcon = milestone.IsNotEmpty("Icon");
 }
 
-<div class="app-timeline-img-wrapper @(Text.Has(milestone.String("Image")) || Text.Has(milestone.String("Icon")) ? " " : "app-timeline-circle")">
-  @if (Text.Has(milestone.String("Image"))) {
-    <div class="app-timeline-img">
-      @milestone.Picture("Image", imgClass:"img-fluid rounded-circle", settings: "Timeline")
-    </div>
-  } else if (Text.Has(milestone.String("icon"))) {
-    <div class="app-timeline-icon-bg @(Text.Has(milestone.String("Image")) ? "app-timeline-overlay" :"")">
-      <div class="app-timeline-icon">
-        <i class="fas @milestone.String("Icon")"></i>
-      </div>
-    </div>
-  } else {
-    <div class="app-timeline-empty"></div>
-  }
+<div class="app-timeline-img-wrapper @(hasImage || hasIcon ? "" : "app-timeline-circle")">
+    @if (hasImage) {
+        <div class="app-timeline-img">
+            @milestone.Picture("Image", imgClass:"img-fluid rounded-circle", settings: "Timeline")
+        </div>
+    } else if (hasIcon) {
+        <div class="app-timeline-icon-bg @(hasImage ? "app-timeline-overlay" : "")">
+            <div class="app-timeline-icon">
+                <i class="fas @milestone.Icon"></i>
+            </div>
+        </div>
+    } else {
+        <div class="app-timeline-empty"></div>
+    }
 </div>
