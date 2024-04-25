@@ -1,9 +1,9 @@
-@inherits AppCode.Razor.AppRazor<Timeline>
+@inherits AppCode.Razor.AppRazor
 @using ToSic.Razor.Blade
 @using AppCode.Data
 
 @{
-  var milestone = Model;
+  var milestone = As<Timeline>(Model);
   var hasImage = milestone.IsNotEmpty("Image");
   var hasIcon = milestone.IsNotEmpty("Icon");
 }

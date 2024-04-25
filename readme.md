@@ -6,11 +6,11 @@
 
 This **Timeline 3** App is an add-on to DNN.
 
-| Aspect              | Status | Comments or Version |
-| ------------------- | :----: | ------------------- |
-| 2sxc                | ✅    | requires 2sxc v17.06.02
+| Aspect              | Status | Comments or Version
+| ------------------- | :----: | -------------------
+| 2sxc                | ✅    | requires 2sxc v17.07.00
 | Dnn                 | ✅    | For v9.6.1+
-| Oqtane 2            | ✅    | Requires v04.00+
+| Oqtane              | ✅    | Requires v04.00+
 | No jQuery           | ?     |
 | Live Demo           | ➖    |
 | Install Checklist   | ✅    | See [Installation] on [azing.org](https://azing.org/2sxc)
@@ -67,3 +67,4 @@ The Source Code is all here - so you can easily customize to your hearts desire!
   * everything typed
 * v03.04.17 2024-04
   * strong typed
+  * Auto Generated Class

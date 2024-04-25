@@ -5,11 +5,12 @@
 
 @{
   var milestones = AsList<Timeline>(MyData).OrderByDescending(milestone => milestone.Date);
-  var milestonesByYear = milestones.GroupBy(milestone => milestone.Date.ToString("yyyy"));
+  var milestonesByYear = milestones.GroupBy(milestone => milestone.Date.ToString("yyyy")).ToList();
 }
 
 <div class="app-timeline app-timeline-@UniqueKey">
-  @foreach (var milestonesOfYear in milestonesByYear.ToList()) {
+  @foreach (var milestonesOfYear in milestonesByYear) {
+    // Index for alternating layouy (Right/Left)
     var milestoneIndex = 0;
     <div class="app-timeline-head row col-12 pb-md-4 justify-content-md-center">
       <div class="col-4 pb-4 pb-md-0 col-md-2 app-timeline-milestone-center">
