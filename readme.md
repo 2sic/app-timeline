@@ -6,14 +6,14 @@
 
 This **Timeline 3** App is an add-on to DNN.
 
-| Aspect              | Status | Comments or Version |
-| ------------------- | :----: | ------------------- |
-| 2sxc                | ✅    | requires 2sxc v16.04
+| Aspect              | Status | Comments or Version
+| ------------------- | :----: | -------------------
+| 2sxc                | ✅    | requires 2sxc v17.07.00
 | Dnn                 | ✅    | For v9.6.1+
-| Oqtane 2            | ✅    | Requires v04.00+
-| No jQuery           | ?     |
+| Oqtane              | ✅    | Requires v04.00+
+| No jQuery           | ✅    |
 | Live Demo           | ➖    |
-| Install Checklist   | ✅    | See [Installation] on [azing.org](https://azing.org/2sxc)
+| Install Checklist   | ✅    | See **Installation** on [azing.org](https://azing.org/2sxc)
 | Source & License    | ✅    | included, ISC/MIT
 | App Catalog         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/timeline-app-v3-hybrid-for-dnn-and-oqtane)
 | Screenshots         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/timeline-app-v3-hybrid-for-dnn-and-oqtane)
@@ -23,16 +23,18 @@ This **Timeline 3** App is an add-on to DNN.
 | Bootstrap 5         | ✅    | optimized
 
 ## Quick Intro To The Timeline App for DNN
+
 A [DNN App][2sxc] is like a DNN module, just way better :). Since this is an open-code/open-source 2sxc-app, you can customize it to be anything you want! This list just shows what it already does, so you know what you get out-of-the-first-box.
 
 Because it's so simple and uses 2sxc, you can easily
+
 * [translate it into any other language in minutes][translate]
 
 ## Getting Started
 
-This app is only useful is you use DNN. So assuming you have a DNN installation, all you need to do is install 2sxc and this app. 
+This app is only useful is you use DNN. So assuming you have a DNN installation, all you need to do is install 2sxc and this app.
 
-* Now you can use this app as-is, or customize it to be whatever you need it to be. 
+* Now you can use this app as-is, or customize it to be whatever you need it to be.
 
 * It probably helps to review the [Overview][overview] about how the parts play together by default, so you can then change as little as necessary to get it to do what you want
 
@@ -65,3 +67,6 @@ The Source Code is all here - so you can easily customize to your hearts desire!
 * v03.04.00 2023-07
   * 2sxc 16.02 coding conventions
   * everything typed
+* v03.17.00 2024-04
+  * strong typed
+  * Auto Generated Class

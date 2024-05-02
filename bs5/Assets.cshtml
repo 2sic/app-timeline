@@ -1,7 +1,6 @@
 @inherits Custom.Hybrid.RazorTyped
 @using ToSic.Razor.Blade;
 @{
-  var viewEdition = MyView.Edition;
 
   // 2. Include the framework if it isn't known
  @Kit.Page.Activate(condition: Kit.Css.IsUnknown, features: "Bootstrap5")
@@ -14,7 +13,6 @@
       @Html.Raw(Connect.Koi.Messages.OnlyAdminsSeeThis)
     </div>
   }
-
   Kit.Page.Activate("FontAwesome5"); 
 }
 
