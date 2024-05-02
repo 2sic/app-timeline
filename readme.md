@@ -67,6 +67,6 @@ The Source Code is all here - so you can easily customize to your hearts desire!
 * v03.04.00 2023-07
   * 2sxc 16.02 coding conventions
   * everything typed
-* v03.04.17 2024-04
+* v03.17.00 2024-04
   * strong typed
   * Auto Generated Class
