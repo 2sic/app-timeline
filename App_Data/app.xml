@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.07.00" ExportDate="2023-09-26T09:47:48.8735374+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="17.07.00" ExportDate="2024-05-02T11:03:55.076326+02:00">
   <Header>
     <App Guid="f7b4714c-f706-4f6d-8d41-1bee4601d5cc" />
     <Language Default="en-us" />
@@ -261,6 +261,9 @@
       <Value Key="AllowTokenTemplates" Value="False" Type="Boolean">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
+      <Value Key="DebugLog" Value="" Type="String">
+        <Dimension DimensionID="115" ReadOnly="false" />
+      </Value>
       <Value Key="Description" Value="" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
@@ -279,16 +282,16 @@
       <Value Key="RequiredDnnVersion" Value="09.06.01" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredOqtaneVersion" Value="04.00.00" Type="String">
+      <Value Key="RequiredOqtaneVersion" Value="05.00.00" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredVersion" Value="16.04.00" Type="String">
+      <Value Key="RequiredVersion" Value="17.07.00" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
       <Value Key="SupportsAjaxReload" Value="True" Type="Boolean">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="03.04.00" Type="String">
+      <Value Key="Version" Value="03.17.00" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
     </Entity>
@@ -353,10 +356,10 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="98f8c998-d939-433c-858f-a71f05c01dc2" Json="True">
-      <Value Key="Content" Value="null,null,null" Type="Entity" />
+      <Value Key="Content" Value="null,812f18f6-8c7d-4d2a-8509-66522d192158,c0532435-958a-46e6-aa7c-8136e7132847,null" Type="Entity" />
       <Value Key="ListContent" Value="null" Type="Entity" />
       <Value Key="ListPresentation" Value="null" Type="Entity" />
-      <Value Key="Presentation" Value="null,null,null" Type="Entity" />
+      <Value Key="Presentation" Value="null,null,null,null" Type="Entity" />
       <Value Key="Template" Value="03ce3e88-8a45-4d94-9f00-194ad50d3c88" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="ae4e6178-e7a9-4a88-9d3d-026d8cc947a7" AttributeSetName="Timeline" EntityGUID="c55d7905-994b-468b-92e2-c0e9bcd49821">
@@ -372,8 +375,11 @@
       <Value Key="Text" Value="&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea&lt;/p&gt;" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Demo Inhalt" Type="String">
+      <Value Key="Title" Value="Demo Content Image and Icon" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Demo Inhalt Bild und Icon" Type="String">
+        <Dimension DimensionID="116" ReadOnly="false" />
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="3937fa17-ef2d-40a7-b089-64164eb10bab" AttributeSetName="2sxcPolymorphismConfiguration" EntityGUID="9936f02d-8ccd-4d2c-b103-3f95cd545abb" Json="True">
@@ -446,13 +452,47 @@
       <Value Key="DurationUsers" Value="-1" Type="Number">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="IsEnabled" Value="False" Type="Boolean">
+      <Value Key="IsEnabled" Value="True" Type="Boolean">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="🚫" Type="String">
+      <Value Key="Title" Value="✅ - Users 14400s, Reg 🚫, Editors 300s, SysAdmins 300s" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
       <Value Key="UrlParametersCaseSensitive" Value="False" Type="Boolean">
+        <Dimension DimensionID="115" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="ae4e6178-e7a9-4a88-9d3d-026d8cc947a7" AttributeSetName="Timeline" EntityGUID="c0532435-958a-46e6-aa7c-8136e7132847">
+      <Value Key="Date" Value="2024-04-18T00:00:00" Type="DateTime">
+        <Dimension DimensionID="115" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="fa-assistive-listening-systems" Type="String">
+        <Dimension DimensionID="115" ReadOnly="false" />
+      </Value>
+      <Value Key="Image" Value="" Type="Hyperlink">
+        <Dimension DimensionID="115" ReadOnly="false" />
+      </Value>
+      <Value Key="Text" Value="&lt;p&gt;Something great happened here!&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="115" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Sample with Icon" Type="String">
+        <Dimension DimensionID="115" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="ae4e6178-e7a9-4a88-9d3d-026d8cc947a7" AttributeSetName="Timeline" EntityGUID="812f18f6-8c7d-4d2a-8509-66522d192158">
+      <Value Key="Date" Value="2024-04-09T00:00:00" Type="DateTime">
+        <Dimension DimensionID="115" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="String">
+        <Dimension DimensionID="115" ReadOnly="false" />
+      </Value>
+      <Value Key="Image" Value="file:6133" Type="Hyperlink">
+        <Dimension DimensionID="115" ReadOnly="false" />
+      </Value>
+      <Value Key="Text" Value="&lt;p&gt;Lorem...&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="115" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Sample image only" Type="String">
         <Dimension DimensionID="115" ReadOnly="false" />
       </Value>
     </Entity>
