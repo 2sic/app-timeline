@@ -70,3 +70,5 @@ The Source Code is all here - so you can easily customize to your hearts desire!
 * v03.17.00 2024-04
   * strong typed
   * Auto Generated Class
+* v03.17.01 2024-07
+  * Update app.sln and app.csproj
