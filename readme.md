@@ -18,8 +18,8 @@ This **Timeline 3** App is an add-on to DNN.
 | App Catalog         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/timeline-app-v3-hybrid-for-dnn-and-oqtane)
 | Screenshots         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/timeline-app-v3-hybrid-for-dnn-and-oqtane)
 | Best Practices      | ✅    | Uses v13.10 conventions
-| Bootstrap 3         | ✔️    | not optimized
-| Bootstrap 4         | ✅    | optimized
+| Bootstrap 3         | ❌    | Last supported in v03.21.01
+| Bootstrap 4         | ❌    | Last supported in v03.21.01
 | Bootstrap 5         | ✅    | optimized
 
 ## Quick Intro To The Timeline App for DNN
@@ -45,6 +45,10 @@ The Source Code is all here - so you can easily customize to your hearts desire!
 ---
 
 ## History
+
+* v03.21.02 2026-10
+  * Removed Bootstrap 3 and Bootstrap 4 support; the app is now Bootstrap 5 only
+  * For Bootstrap 3 or Bootstrap 4, use v03.21.01
 
 * 2022-03
   * Updated to v12 best-practices
